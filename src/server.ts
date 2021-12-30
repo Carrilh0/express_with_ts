@@ -11,9 +11,8 @@ const add = (...numbers: number[]): number => {
 
 // Middleware Example
 app.get("/", (req: Request, res: Response, next: NextFunction) => {
-  next()
+  next();
 });
-
 
 app.get("/", (req: Request, res: Response) => {
   let teste = add(55, 55, 100, 500);

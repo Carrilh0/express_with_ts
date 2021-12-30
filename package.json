@@ -5,6 +5,7 @@
   "main": "src/server.ts",
   "scripts": {
     "start": "nodemon",
+    "build": "tsc -p .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -18,14 +19,6 @@
     "nodemon": "^2.0.15",
     "ts-node": "^10.4.0",
     "tslint": "^5.12.1",
-    "typescript": "^3.3.3"
-  },
-  "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
-    "rootDir": "./",
-    "outDir": "./build",
-    "esModuleInterop": true,
-    "strict": true
+    "typescript": "^3.5.1"
   }
 }
