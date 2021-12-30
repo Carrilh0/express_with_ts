@@ -9,10 +9,17 @@ const add = (...numbers: number[]): number => {
   });
 };
 
+// Middleware Example
+app.get("/", (req: Request, res: Response, next: NextFunction) => {
+  next()
+});
+
+
 app.get("/", (req: Request, res: Response) => {
   let teste = add(55, 55, 100, 500);
   res.send(`${teste}`);
 });
+
 
 app.listen(PORT, () => {
   console.log(`Servidor executando na porta ${PORT}.`);
